@@ -1,7 +1,7 @@
 {
   "version": 2,
   "buildCommand": "next build",
-  "functions": { "/api/index.php": {"rontime":"vercel-php@0.3.1" }},
+  "functions": { "/api/index.php": {"runtime":"vercel-php@0.3.1" }},
   "routes": [
       {
           "src": "/(.*)",
