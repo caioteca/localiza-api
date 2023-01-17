@@ -1,9 +1,13 @@
 {
   "version": 2,
+  
   "builds": [
       { "src": "/api/index.php" },
       { "src": "/public/**", "use": "@vercel/static" }
   ],
+ 
+    "buildCommand": "next build",
+  
   "routes": [
       {
           "src": "/(.*)",
@@ -28,4 +32,5 @@
       "SSR_TEMP_PATH": "/tmp/ssr",
       "NODE_PATH": "node"
   }
+  
 }
