@@ -1,11 +1,11 @@
 {
   "version": 2,
   "buildCommand": "next build",
-  "functions": { "/api/index.php": {"runtime":"vercel-php@0.3.1" }},
+  "functions": { "api/index.php": {"runtime":"vercel-php@0.3.1" }},
   "routes": [
       {
           "src": "/(.*)",
-          "dest": "api/index.php"
+          "dest": "/api/index.php"
       }
   ],
   "env": {
